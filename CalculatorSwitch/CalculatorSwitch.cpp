@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    double num1, num2, resultado;
+    double num1, num2, result;
     int option;
 
     cout << "Bienvenido a la calculadora\n";
@@ -22,21 +22,21 @@ int main() {
 
     switch (option) {
         case 1:
-            resultado = num1 + num2;
-            cout << "Resultado: " << resultado << endl;
+            result = num1 + num2;
+            cout << "Resultado: " << result << endl;
             break;
         case 2:
-            resultado = num1 - num2;
-            cout << "Resultado: " << resultado << endl;
+            result = num1 - num2;
+            cout << "Resultado: " << result << endl;
             break;
         case 3:
-            resultado = num1 * num2;
-            cout << "Resultado: " << resultado << endl;
+            result = num1 * num2;
+            cout << "Resultado: " << result << endl;
             break;
         case 4:
             if (num2 != 0) {
-                resultado = num1 / num2;
-                cout << "Resultado: " << resultado << endl;
+                result = num1 / num2;
+                cout << "Resultado: " << result << endl;
             } else {
                 cout << "Error, no se puede dividir entre 0." << endl;
             }
