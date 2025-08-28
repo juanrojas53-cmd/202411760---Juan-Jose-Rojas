@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     double num1, num2, resultado;
-    int opcion;
+    int option;
 
     cout << "Bienvenido a la calculadora\n";
     cout << "Ingrese el primer numero: ";
@@ -18,9 +18,9 @@ int main() {
     cout << "4. Dividir\n";
     cout << "5. Modulo\n";
     cout << "Opcion: ";
-    cin >> opcion;
+    cin >> option;
 
-    switch (opcion) {
+    switch (option) {
         case 1:
             resultado = num1 + num2;
             cout << "Resultado: " << resultado << endl;
