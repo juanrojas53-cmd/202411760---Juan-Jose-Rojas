@@ -42,7 +42,7 @@ bool espetialCharacter(string password)
         for (int i = 0; i < password.size(); i++)
         {
             if(password[i]>= 33 && password[i]<= 47)
-           spetials++;
+            spetials++;
         }
         return spetials >=3 ;
     }
