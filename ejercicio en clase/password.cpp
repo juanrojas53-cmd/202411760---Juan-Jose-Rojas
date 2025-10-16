@@ -42,7 +42,7 @@ bool espetialCharacter(string password)
         for (int i = 0; i < password.size(); i++)
         {
             if(password[i]>= 33 && password[i]<= 47)
-            return spetials++;
+           spetials++;
         }
         return spetials >=3 ;
     }
@@ -52,6 +52,15 @@ void verifyPassword()
     string password;
     cout << "Ingrese una contraseña: ";
     cin >> password; 
+
+    if (passwordLenght (password) && mayusculaLetters(password) && minuscula(password) && espetialCharacter(password))
+    {
+    cout<<"contraseña valida" <<endl;
+    }
+    else 
+    {
+        cout<<"contraseña invalida"<< endl;
+    }
 }
 
 int main()
