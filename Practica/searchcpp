@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool contieneLetra(string palabra, char letra) 
+{
+    for (int i = 0; i < palabra.size(); i++)
+    {
+        if (palabra[i] == letra) 
+        {
+            return true;  // si la encuentra, termina aquí
+        }
+    }
+    return false;  // si termina el for sin encontrarla
+}
+
+int main() {
+    string palabra;
+    char letra;
+
+    cout << "Escribe una palabra: ";
+    cin >> palabra;
+
+    cout << "Escribe una letra a buscar: ";
+    cin >> letra;
+
+    if (contieneLetra(palabra, letra)) {
+        cout << "La letra '" << letra << "' Si esta en la palabra: " << palabra  << endl;
+    } else {
+        cout << "La letra '" << letra << "' No estal en la palabra: " << palabra  << endl;
+    }
+
+    return 0;
+}
